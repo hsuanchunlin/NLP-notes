@@ -17,7 +17,9 @@ Which include my study notes and functional test.
 1. Multi Head Attention (MHA)
    
    multi\_head\_attention.py
-   
+   <figure>
+   <img src=images/transformer/mha_img_original.png width=400 />
+   </figure>
 1. Create look ahead and padding masks
 	
 	create_mask.py
@@ -34,8 +36,12 @@ Which include my study notes and functional test.
 
 	transformer.py
 
-1. Training steps
+### Training steps
+1. Learning rate
 
+```math
+lrate = d^{-0.5}_{model}*min(step_num^{-0.5}, step\_ num \cdot warmup\_ steps^{-1.5})
+```
 
 	
 	
